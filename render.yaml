@@ -1,0 +1,21 @@
+﻿services:
+  - type: worker
+    name: reward-bots
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python start_all_bots.py
+    envVars:
+      - key: BOT_TOKEN_IMAGE
+        value: 8734370064:AAHBrZJgAPUz2doqJtxfuDGBEolmQ6zc2HU
+      - key: BOT_TOKEN_VIDEO
+        value: 8831867137:AAFdBQkfSUHeBPMqjKg16jH41jmhjbqDKeo
+      - key: API_ID
+        value: 34289383
+      - key: API_HASH
+        value: 5d25161314d03e8da3f717d7c784847e
+      - key: LOGS_CHANNEL_IMAGE
+        value: -1002868842752
+      - key: LOGS_CHANNEL_VIDEO
+        value: -1002881651967
+      - key: ADMIN_IDS
+        value: 6791290848
