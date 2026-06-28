@@ -5,6 +5,8 @@
     buildCommand: pip install -r requirements.txt
     startCommand: python start_all_bots.py
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.5
       - key: BOT_TOKEN_IMAGE
         value: 8734370064:AAHBrZJgAPUz2doqJtxfuDGBEolmQ6zc2HU
       - key: BOT_TOKEN_VIDEO
